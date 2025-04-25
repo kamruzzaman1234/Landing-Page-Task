@@ -657,5 +657,89 @@ body {
     width:17.26px;
     height:9.76px;
   }
-  
+
+  /* Lets Download the App style */
+  .bg_blue{
+    background:#EEF2FF;
+    position:relative;
+    height:100vh;
+    overflow:hidden;
+    
+   
+  }
+  .lets_download_wrapper{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+   
+  }
+  .lets_download_content{
+    max-width:560px;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:24px;
+    padding:120px 0;
+    
+  }
+.lets_btn{
+    display:flex;
+    gap:16px;
+    margin-top:24px;
+}
+.lets_download_content h4{
+    font-size:36px;
+    line-height:44px;
+    letter-spacing:-1.4%;
+    font-family:"Plus Jakarta Sans";
+    font-weight:800;
+    color:#1E293B;
+}
+.lets_download_content p{
+    color:#475569;
+    font-family:"Plus Jakarta Sans";
+    font-weight:700;
+    font-size:18px;
+    line-height:160%;
+    letter-spacing:0%;
+    color:#475569;
+}
+.position_large{
+    width:354px;
+    
+    position:absolute;
+    
+    bottom:0;
+    right:20%;
+}
+.image_area{
+    display:flex;
+    gap:8px;
+
+}
+.position_large img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.position_small{
+    width:354px;
+    height:721px;
+    position:absolute;
+    top:0;
+    right:0;
+    
+}
+.position_small img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.footer_content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
 
