@@ -12,3 +12,12 @@ faqItems.forEach(item => {
     });
   });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const mobileIcon = document.querySelector('.mobile_icons');
+  const menuBar = document.querySelector('.menu_bar');
+
+  mobileIcon.addEventListener('click', function () {
+    menuBar.classList.toggle('active');
+  });
+});
