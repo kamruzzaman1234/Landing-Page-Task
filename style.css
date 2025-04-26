@@ -532,7 +532,16 @@ body {
 
 }
 
+.test_card1_btn span{
+    font-size:20px;
 
+}
+.test_card1_btn .blue_bg1{
+    background:#4F46E5;
+    color:white;
+    width:100%;
+    display:none;
+}
 /* Our Office Section Style */
 .our_office_wrapper{
     display:flex;
@@ -686,7 +695,7 @@ body {
     display:flex;
     flex-direction:column;
     gap:24px;
-    padding:120px 0;
+    padding:180px 0;
     
   }
 .lets_btn{
@@ -711,34 +720,42 @@ body {
     letter-spacing:0%;
     color:#475569;
 }
+
 .position_large{
     width:354px;
     position:absolute;
     bottom:0px;
-    right:20%;
-}
-.image_area{
-    display:flex;
-    gap:8px;
-
+    right:22%;
+    background:white;
+    padding:10px;
+    border-radius:24px;
 }
 .position_large img{
     width:100%;
     height:100%;
-    object-fit:cover;
+    object-fit:contain;
+    border-radius:24px;
+    border:1px solid #e0e0e0;
+
 }
 .position_small{
     width:354px;
     height:721px;
     position:absolute;
+    padding:10px;
     top:0;
-    right:0;
+    right:-50px;
+    background:white;
+    border-radius:24px;
+    
     
 }
 .position_small img{
     width:100%;
     height:100%;
-    object-fit:cover;
+    object-fit:contain;
+    border:1px solid #e0e0e0;
+    border-radius:24px;
 }
 
 /* Footer Style */
@@ -897,6 +914,9 @@ body {
       }
       
       @media (max-width: 768px) {
+        .navbar-wrapper{
+            padding:0 15px;
+        }
         .menu_bar {
             display: none;
             position: absolute;
@@ -1011,6 +1031,303 @@ body {
         }
 
         /* Our primary feature  */
+        .feature_wrapper{
+            display:flex;
+            flex-direction:column;
+            padding:0 30px;
+            gap:64px;
+        
+        }
+
+        .hero_title h2{
+            font-size:30px;
+            line-height:38px;
+            letter-spacing:-1.3%;
+            font-weight:800;
+            font-family:"Plus Jakarta Sans";   
+        }
+        .hero_des p{
+            font-size:18px;
+            line-height:160%;
+            color:#475569;
+        }
+        .feature_card{
+            display:grid;
+            grid-template-columns:repeat(1, 1fr);
+            gap:32px;
+        
+        }
+        .card1{
+            max-width:384px;
+            width:100%;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            gap:20px;
+        }
+        .card_img{
+            width:55px;
+        }
+        .card_img img{
+            width:100%;
+        }
+        .card_title1{
+            display:flex;
+            flex-direction:column;
+            gap:8px;
+        }
+        .card_title1 h4{
+            font-size:20px;
+            line-height:28px;
+            letter-spacing:-1%;
+            font-family:"Plus Jakarta Sans";
+            font-weight:700;
+            text-align:center;
+        }
+        .card_title1 p{
+            font-size:16px;
+            line-height:160%;
+            letter-spacing:0%;
+            font-family:"Plus Jakarta Sans";
+            font-weight:400;
+            text-align:center;
+        }
+
+        /* work_count_wrapper */
+
+        .work_count_wrapper{
+           padding:0px 15px;
+        }
+        .hero_title h2{
+            text-align:center;
+            color:#1E293B;
+        }
+        .count_down{
+            display:grid;
+            grid-template-columns:repeat(1, 1fr);
+            gap:10px;
+        }
+        /* What is for style */
+        .procrastinatiors_say_wrapper{
+            padding:0px 15px;
+        }
+        .heading_text_title h2{
+            font-size:30px;
+            line-height:38px;
+            font-weight:700;
+
+        }
+        .heading_des p{
+            font-size:18px;
+            font-weight:400;
+            line-height:160%;
+        }
+        .heading_btn_text h3{
+            color: #4F46E5;
+            padding: 6px 12px;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: -0.6%;
+            font-family: "Plus Jakarta Sans";
+            font-weight: 600;
+        }
+        .content_card_des h3{
+            font-size:20px;
+            line-height:28px;
+            font-weight:700
+        }
+        .procrastinator_content{
+            display:flex;
+            flex-direction:column;
+
+        }
+       
+        .content_card1{
+            display:flex;
+            
+
+        
+        }
+        .content_card_line{
+            width:8px;
+            height:150px;
+            background:#E0E7FF;
+            border-radius:6px;
+        
+        }
+        .content_card_des{
+            display:flex;
+            flex-direction:column;
+            gap:12px;
+            padding:24px 24px 24px 0;
+        }
+        .content_card_des h3{
+            font-size:20px;
+            line-height:28px;
+            letter-spacing:-1%;
+            font-family:"Plus Jakarta Sans";
+            font-weight:700;
+            color:#475569;
+        }
+        .content_card_des p{
+            font-size:16px;
+            line-height: 160%;
+            letter-spacing:0%;
+            font-family:"Plus Jakarta Sans";
+            font-weight:400;
+            color:#475569;
+        
+        }
+        .img_area{
+            width:343px;
+            height:343px;
+
+        }
+        .img_area img{
+            width:100%;
+            height:100%;
+            object-fit:cover;
+        }
+      /* Testimonial Style */
+      .testimonial_wrapper{
+        padding:0px 15px;
+      }
+      .testimonial_card{
+        display:grid;
+        grid-template-columns:repeat(1, 1fr);
+      }
+      .test_card1_btn .blue_bg1{
+        background:#4F46E5;
+        color:white;
+        width:100%;
+        display:block;
+    }
+
+      /* Our office wrapper style */
+      .our_office_wrapper{
+        padding:0px 15px;
+      }
+      .our_company_card{
+        display:grid;
+        grid-template-columns:repeat(1, 1fr);
+      }
+
+      /* Lets Download style */
+      .bg_blue{
+        background:#EEF2FF;
+        padding-bottom:250px;
+        position:relative;
+        /* height:100%; */
+      
+        /* padding:110px 0px; */
+        
+       
+      }
+      .lets_download_wrapper{
+        padding:0px 15px;
+      }
+      .lets_download_content{
+
+      }
+      .position_large{
+        width:162px;
+        height:329px;
+       
+        position:absolute;
+        bottom:30px;
+        right:50%;
+      }
+      .position_large img{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+      }
+      .position_small{
+        width:162px;
+        height:329px;
+        position:absolute;
+        right:10%;
+        top:64%;
+        
+      }
+      .position_small img{
+        width:100%;
+        height: 100%;
+        object-fit:cover;
+      }
+    /* trtrasdf */
+
+      
+      .lets_download_wrapper{
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        align-items:center;
+       
+      }
+      .lets_download_content{
+      
+        
+      }
+    .lets_btn{
+        display:flex;
+        gap:16px;
+        margin-top:24px;
+    }
+    .lets_download_content h4{
+        font-size:36px;
+        line-height:44px;
+        letter-spacing:-1.4%;
+        font-family:"Plus Jakarta Sans";
+        font-weight:800;
+       
+        color:#1E293B;
+    }
+    .lets_download_content p{
+        color:#475569;
+        font-family:"Plus Jakarta Sans";
+        font-weight:700;
+        font-size:18px;
+        line-height:160%;
+        letter-spacing:0%;
+        color:#475569;
+    }
+    .lets_btn{
+       display:grid;
+       grid-template-columns:repeat(1, 1fr)
+
+    }
+    .lets_btn .btn{
+        width:100%;
+    }
+  
+    .image_area{
+        display:flex;
+        flex-direction:column;
+        gap:8px;
+    
+    }
+
+    /* Footer Wrapper */
+    .footer_wrapper{
+        padding:0px 15px;
+    }
+    .footer_content{
+        display:grid;
+        grid-template-columns:repeat(1, 1fr);
+        gap:15px;
+    }
+
+
+   
+   
+
+
+
+
+
+       
    
       }
 
