@@ -1233,6 +1233,11 @@ body {
             object-fit:cover;
         }
 
+        /* Hero wrapper */
+        .hero_wrapper{
+            padding:0px;
+        }
+        
         /* company logo style */
         .company_wrapper{
             padding:0 10px;
