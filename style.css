@@ -62,7 +62,7 @@ body {
       padding: 13px 20px;
       background:white;  
       color:#475569;
-      border: 1px solid #CBD5E1; /* 1px border */
+      border: 1px solid #CBD5E1; 
       border-radius: 1234px;
       font-size: 16px;
       font-weight:700;
@@ -84,7 +84,7 @@ body {
     gap:64px;
 }
 .bg_gradient{
-  background: linear-gradient(to top, #4F46E5, #ffffff); 
+  background: linear-gradient(to top, #b5b1f8, #ffffff); 
   color: #1e293b;
   padding: 20px;
   border-radius: 10px;
@@ -128,6 +128,7 @@ body {
     font-family:"Plus Jakarta Sans";
     font-weight:800;
     text-align:center;
+    color:#1E293B;
     
 }
 .hero_des p{
@@ -137,6 +138,7 @@ body {
     font-weight:400;
     letter-spacing:0;
     text-align:center;
+    color:#475569;
 }
 .hero_logo_area{
     display:flex;
@@ -242,6 +244,7 @@ body {
     letter-spacing:-1.4%;
     font-weight:800;
     font-family:"Plus Jakarta Sans";   
+    color:#1E293B;
 }
 .feature_card{
     display:grid;
@@ -276,6 +279,7 @@ body {
     font-family:"Plus Jakarta Sans";
     font-weight:700;
     text-align:center;
+    color:#1E293B;
 }
 .card_title1 p{
     font-size:16px;
@@ -284,6 +288,7 @@ body {
     font-family:"Plus Jakarta Sans";
     font-weight:400;
     text-align:center;
+    color:#475569;
 }
 
 /* Work Count Down Style */
@@ -398,6 +403,7 @@ body {
 .content_card1{
     display:flex;
     gap:24px;
+    cursor:pointer;
 
 }
 .content_card_line{
@@ -405,8 +411,14 @@ body {
     height:138px;
     background:#E0E7FF;
     border-radius:6px;
+    transition:all 2s;
 
 }
+
+.content_card1:hover .content_card_line {
+    background: #4F46E5;
+}
+
 .content_card_des{
     display:flex;
     flex-direction:column;
@@ -832,6 +844,9 @@ body {
     letter-spacing:-0.6%;
     color:#94A3B8;
 }
+.d_none{
+    display:none;
+}
 
 /* Mobile Responsive */
 
@@ -1108,6 +1123,18 @@ body {
             grid-template-columns:repeat(1, 1fr);
             gap:10px;
         }
+        .margin_right_border{
+            display:none;
+        }
+
+        .count1{
+            display:flex;
+            flex-direction:column;
+            gap:20px;
+            padding:30px 0px;
+            border-bottom:1px solid #e0e0e0
+        }
+       
         /* What is for style */
         .procrastinatiors_say_wrapper{
             padding:0px 15px;
@@ -1317,6 +1344,27 @@ body {
         display:grid;
         grid-template-columns:repeat(1, 1fr);
         gap:15px;
+    }
+    .copyright_text{
+        display:none;
+    }
+    .d_none{
+        display:block;
+    }
+
+    .justify-content_star{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .footer_copyright{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        gap:30px;
+        align-items:center;
+        text-align:center;
     }
 
 
